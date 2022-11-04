@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
                 n1.text = liczby.last.toString()
             }
         }
+
+
         Sdelete.setOnClickListener {
             liczby.removeLast()
             if (liczby.isEmpty()) {
@@ -34,6 +36,24 @@ class MainActivity : AppCompatActivity() {
             } else {
                 n1.text = liczby.last.toString()
             }
+        }
+        val kolejka: Queue<Int> = LinkedList<Int>()
+        val Kadd = findViewById<Button>(R.id.button3)
+        val KolejkaUsun = findViewById<Button>(R.id.button4)
+        val KolejkaZawartosc = findViewById<Button>(R.id.button5)
+        val kwpisz = findViewById<EditText>(R.id.wpiszs2)
+        val n2 = findViewById<TextView>(R.id.n)
+
+        KolejkaZawartosc.setOnClickListener {
+            n2.text = kolejka.toString()
+        }
+
+
+        Kadd.setOnClickListener {
+            kolejka.add(kwpisz.text.toString().toInt())
+        }
+        KolejkaUsun.setOnClickListener {
+            kolejka.poll()
         }
     }
 }
