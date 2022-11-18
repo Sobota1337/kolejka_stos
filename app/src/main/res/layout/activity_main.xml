@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+.<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/n1"
+        android:id="@+id/tekst_stos"
         android:layout_width="67dp"
         android:layout_height="82dp"
         android:text="x"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.093" />
 
     <TextView
-        android:id="@+id/n"
+        android:id="@+id/tekst_kolejka"
         android:layout_width="67dp"
         android:layout_height="82dp"
         android:text="x"
@@ -31,33 +31,37 @@
         app:layout_constraintVertical_bias="0.604" />
 
     <EditText
-        android:id="@+id/wpiszs"
+        android:id="@+id/wpiszstos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.208"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
+        app:layout_constraintVertical_bias="0.361"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/wpiszs2"
+        android:id="@+id/wpiszs_kolejke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
+        app:layout_constraintVertical_bias="0.625"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/stos_dodaj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="dodawanie"
@@ -69,7 +73,7 @@
         app:layout_constraintVertical_bias="0.257" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/stos_usun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="usuwanie"
@@ -81,7 +85,7 @@
         app:layout_constraintVertical_bias="0.257" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/kolejka_dodaj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="dodawanie"
@@ -93,7 +97,7 @@
         app:layout_constraintVertical_bias="0.737" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/kolejka_usun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="usuwannie"
@@ -105,7 +109,7 @@
         app:layout_constraintVertical_bias="0.737" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/zawartość_kolejki"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="zawartosc"
